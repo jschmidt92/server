@@ -1,0 +1,13 @@
+name = "SOF Server"
+prefix = "sof_server"
+author = "SOF"
+mainprefix = "z"
+
+[files]
+include = [
+    "sof_server_version.json",
+    "*.paa"
+]
+
+[version]
+git_hash = 0 # Disabled
