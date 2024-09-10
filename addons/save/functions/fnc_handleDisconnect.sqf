@@ -18,12 +18,14 @@
 */
 
 addMissionEventHandler ["HandleDisconnect", {
-	params ["_unit", "_id", "_uid", "_name"];
+	// params ["_unit", "_id", "_uid", "_name"];
 
+	private _unit = _this select 0;
+	private _uid = _this select 2;
 	private _data = [
 	_uid,
-	"armory_unlocks", [sof_client_armory_arsenalUnlocks],
-	"garage_unlocks", [sof_client_armory_garageUnlocks],
+	"armory_unlocks", [_unit getVariable ["Armory_Unlocks", []]],
+	"garage_unlocks", [_unit getVariable ["Garage_Unlocks", []]],
 	"locker", [_unit getVariable ["Locker", []]],
 	"garage", [_unit getVariable ["Garage", []]],
 	"cash", [_unit getVariable ["Cash", 0]],
