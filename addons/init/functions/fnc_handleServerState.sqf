@@ -13,9 +13,9 @@ switch (_condition) do {
 		"garage_unlocks", [companyGarageUnlocks]
 		];
 
-		["hsetidbulk", "", "", -1, _data, "", "null", false] call dragonfly_db_fnc_addTask;
+		["hsetidbulk", "", "", -1, _data, "", false] call dragonfly_db_fnc_addTask;
 	};
 	case "load": {
-		["hgetallid", "CompanyState", "", -1, [], "sof_server_init_fnc_handleServerStateLoad", "null", false] call dragonfly_db_fnc_addTask;
+		["hgetallid", "CompanyState", "", -1, [], "sof_server_init_fnc_handleServerStateLoad", false] call dragonfly_db_fnc_addTask;
 	};
 };

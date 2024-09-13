@@ -17,7 +17,7 @@ if (_data isEqualTo [""]) then {
 
     companyGarageUnlocks = [[],[],[],[],[],[]];
     publicVariable "companyGarageUnlocks";
-    
+
     diag_log "No Server Entry Found!";
     ["save"] call FUNC(handleServerState);
 
