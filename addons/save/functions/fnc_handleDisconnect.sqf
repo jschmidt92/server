@@ -24,8 +24,8 @@ addMissionEventHandler ["HandleDisconnect", {
 	private _uid = _this select 2;
 	private _data = [
 	_uid,
-	"armory_unlocks", [_unit getVariable ["Armory_Unlocks", []]],
-	"garage_unlocks", [_unit getVariable ["Garage_Unlocks", []]],
+	"armory_unlocks", [_unit getVariable ["Armory_Unlocks", [[],[],[],[]]]],
+	"garage_unlocks", [_unit getVariable ["Garage_Unlocks", [[],[],[],[],[],[]]]],
 	"locker", [_unit getVariable ["Locker", []]],
 	"garage", [_unit getVariable ["Garage", []]],
 	"cash", [_unit getVariable ["Cash", 0]],
